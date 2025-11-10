@@ -96,7 +96,7 @@ resource "aws_nat_gateway" "ngw" {
 }
 
 # ------------------------
-# Route Tables e Associações
+# Route Tables e association
 # ------------------------
 resource "aws_route_table" "rtb_public" {
   vpc_id = aws_vpc.vpc_model.id
@@ -341,5 +341,6 @@ resource "aws_security_group" "sgr_data" {
     map-migrated  = var.map_migrated
   }
 }
+
 
 
