@@ -4,14 +4,14 @@
 
 # Região AWS
 variable "aws_region" {
-  description = "Região onde a infraestrutura será provisionada"
+  description = "Region where the infrastructure will be provisioned."
   type        = string
   default     = "us-east-1"
 }
 
 # Tag padrão de migração
 variable "map_migrated" {
-  description = "Tag de controle de migração"
+  description = "Migration control tag"
   type        = string
   default     = "migzw01"
 }
@@ -22,28 +22,28 @@ variable "map_migrated" {
 
 # CIDR da VPC
 variable "vpc_cidr" {
-  description = "Bloco CIDR principal da VPC"
+  description = "VPC Main CIDR Block"
   type        = string
   default     = "10.10.0.0/24"
 }
 
 # Subnet public
 variable "public_subnet_cidr" {
-  description = "CIDR da subnet pública"
+  description = "CIDR of the public subnet"
   type        = string
   default     = "10.10.0.0/28"
 }
 
 # Subnet app (private)
 variable "app_subnet_cidr" {
-  description = "CIDR da subnet privada para aplicação"
+  description = "CIDR of the private subnet for the application."
   type        = string
   default     = "10.10.0.32/28"
 }
 
 # Subnet data (private)
 variable "data_subnet_cidr" {
-  description = "CIDR da subnet privada para dados/banco"
+  description = "CIDR of the private subnet for database"
   type        = string
   default     = "10.10.0.64/28"
 }
@@ -56,13 +56,13 @@ variable "availability_zone" {
 }
                                                                                                
 variable "route_table_igw" {
- description = "Bloco CIRD Internet Gateway"
+ description = "CIRD Block Internet Gateway"
  type = string
  default = "0.0.0.0/0"
 } 
 
 variable "route_table_nat" {
- description = "Bloco CIRD Nat Gateway"
+ description = "CIRD Block Nat Gateway"
  type = string
  default = "0.0.0.0/0"
 } 
@@ -72,7 +72,7 @@ variable "route_table_nat" {
 # ------------------------
 
 variable "trafficinternet" {
-  description = "Bloco Aberto de comunicao para o mundo"
+  description = "Open communication bloc for the world"
   type        = string
   default     = "0.0.0.0/0"
 }
@@ -82,7 +82,8 @@ variable "trafficinternet" {
 # ------------------------
 
 variable "project_name" {
-  description = "Nome base para os recursos"
+  description = "Base name for the resources"
   type        = string
   default     = "model"
 }
+
