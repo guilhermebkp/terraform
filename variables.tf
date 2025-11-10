@@ -50,7 +50,7 @@ variable "data_subnet_cidr" {
 
 # Availability Zone Default
 variable "availability_zone" {
-  description = "Zona de disponibilidade para as subnets"
+  description = "Availability zone for subnets"
   type        = string
   default     = "us-east-1a"
 }
@@ -86,4 +86,5 @@ variable "project_name" {
   type        = string
   default     = "model"
 }
+
 
