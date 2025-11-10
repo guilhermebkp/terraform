@@ -8,7 +8,7 @@ description = "Bloco CIDR da VPC"
 }
 
 # ------------------------
-# output Bloco Subnet Publica
+# output Bloco Subnet Public
 # ------------------------
 output "aws_vpc" {
 value = aws_subnet.public_subnet_pub.cidr_block
